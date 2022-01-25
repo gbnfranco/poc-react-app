@@ -1,11 +1,16 @@
 
 const PrimerApp = () => {
-    /* En este caso los diamatnes pueden o no contener el uso del componente Fragment de React, 
-       sin embargo es recomendable ponerlos vacios para evitar imports innecesarios. */
+
+    const contenido = "Este ejercicio muestra el contenido de una variable llamada contenido";
+    const objeto = {
+        id: 1,
+        nombre: "Gibrann"
+    }
     return (
         <>
             <h1>Primera App en React</h1>
-            <p>Usamos fragmentos</p>
+            <p>{contenido}</p>
+            <p>Tambien es posible agregar objetos con JSON.stringify comó se muestra a continuación {JSON.stringify(objeto,null,3)}</p>
         </>
     );
 }
