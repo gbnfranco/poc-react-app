@@ -6,4 +6,4 @@ import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render(<PrimerApp />, divRoot);
+ReactDOM.render(<PrimerApp datos="Información enviada desde el componente padre"/>, divRoot);
